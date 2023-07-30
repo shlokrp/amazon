@@ -23,7 +23,7 @@
 .logo{
     height: 50px;
     width: 100%;
-    background-image: url("./assets/amazon_logo.png");
+    background-image: url("/assets/amazon_logo.png");
     background-size: cover;
 }
 .border{
@@ -149,7 +149,7 @@ hero-section */
 
 .hero-section{
     height: 380px;
-    background-image: url("./assets/hero_image.jpg");
+    background-image: url("/assets/hero_image.jpg");
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -258,7 +258,7 @@ footer{
     align-items: center;
 }
 .foot-logo{
-    background-image: url("./assets/amazon_logo.png");
+    background-image: url("/assets/amazon_logo.png");
     background-size: cover;
     height: 50px;
     width: 100px;
