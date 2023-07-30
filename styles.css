@@ -3,9 +3,7 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
-/* body{
-    overflow-x: scroll;
-} */
+
 .navbar{
     height: 60px;
    background-color: #0f1111;
@@ -176,17 +174,19 @@ hero-section */
 
 .shop-main{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-wrap: wrap;
     background-color: #e2e7e6;
+    gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .box{ 
     border-radius: 10px;
     height: 420px;
-    width: 22%;
+    width: 23%;
     background-color: white;
     padding: 20px 0px 15px;
-    margin: 15px;
 }
 
 .box-img{
@@ -249,18 +249,19 @@ footer{
  }
  .foot-panel3{
     height: 70px;
-
     background-color: #222f3d;
     color: white;
     border-top:0.5px solid white;
     display: flex;
     justify-content: center; 
+    align-items: center;
 }
 .foot-logo{
     background-image: url("amazon_logo.png");
     background-size: cover;
     height: 50px;
     width: 100px;
+
 }
 .foot-panel4{
     font-size: 0.75rem;
@@ -278,4 +279,81 @@ footer{
 }
 .pages a{
     margin-left: 20px;
+}
+/* Mobile Screen Responsive */
+@media only screen and (max-width: 768px){
+    .panel{
+        height: 100%;
+        flex-direction: column;
+        padding: 15px;
+        gap: 10px;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    /* .panel-opt p{
+        margin-left: 0px;
+    } */
+
+    .panel-opt{
+        display: none;
+        /* width: 100%; */
+    }
+    .panel-deals{
+        display: none;
+    }
+
+
+    .box-img{
+        height: 210px;
+        background-size: auto;
+    }
+
+    .box{
+        width: 43%;
+        height: 330px;
+        border-radius: 8px;
+    }
+
+    .hero-section{
+        background-size: contain;
+        height: 300px;
+        padding-bottom: 0px;
+    }
+    .hero-box{
+        border: 1px solid black;
+        height: 65px;
+        padding: 10px;
+    }
+    .navbar{
+        flex-direction: row;
+        gap: 15px;
+        height: 100%;
+        padding: 10px;
+        flex-wrap: wrap;
+    }
+    .nav-search{
+        width: 100vw;
+    }
+    .nav-logo{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 70%;
+    }
+    .logo{
+        width: 100px;
+    }
+
+    footer{
+        margin-top: 0px;
+    }
+
+    .foot-panel2{
+        flex-direction: column;
+        height: 100%;
+        padding-bottom: 30px; 
+    }
+    .foot-panel{
+        flex-direction: column;
+    }
 }
